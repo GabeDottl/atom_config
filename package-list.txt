@@ -1,0 +1,16 @@
+atom-runner@2.7.1
+autocomplete-python@1.8.63
+custom-title@1.0.1
+editor-stats@0.17.0
+file-watcher@1.1.0
+git-plus@7.9.2
+git-time-machine@1.5.9
+incremental-search@5.2.2
+kite@0.24.0
+language-python@0.45.2
+last-cursor-position@0.9.2
+multi-cursor@2.1.5
+platformio-ide-terminal@2.5.1
+project-manager@3.3.4
+python-debugger@0.2.0
+
