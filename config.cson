@@ -1,0 +1,36 @@
+"*":
+  "autocomplete-python":
+    useSnippets: "required"
+  "command-palette":
+    preserveLastSearch: true
+  core:
+    packagesWithKeymapsDisabled: []
+    telemetryConsent: "no"
+  "custom-title":
+    template: "<%= filePath %><% if (projectPath) { %> - <%= projectPath %><% if (gitHead) { %> [<%= gitHead %>]<% } %><% } %>"
+  "exception-reporting":
+    userId: "b5d099bd-a544-4e7a-91e1-19bcdab54826"
+  "incremental-search":
+    instantSearch: true
+  kite:
+    showKiteTourOnStatup: false
+  "platformio-ide-terminal":
+    core:
+      shell: "/bin/zsh"
+    style:
+      animationSpeed: 10
+      theme: "homebrew"
+  runner:
+    extensions:
+      ps1: "powershell –file"
+      "spec.coffee": "mocha"
+    scopes:
+      coffee: "coffee"
+      go: "go run"
+      js: "node"
+      powershell: "powershell -noninteractive -noprofile -c -"
+      python: "python3"
+      ruby: "ruby"
+      shell: "bash"
+  welcome:
+    showOnStartup: false

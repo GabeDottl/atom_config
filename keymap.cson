@@ -1,0 +1,67 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts. Unlike style sheets however,
+# each selector can only be declared once.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#_customizing_keybindings
+# * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
+#
+# If you're having trouble with your keybindings not working, try the
+# Keybinding Resolver: `Cmd+.` on macOS and `Ctrl+.` on other platforms. See the
+# Debugging Guide for more information:
+# * http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-the-keybindings
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+'atom-workspace':
+  'ctrl-{': 'last-cursor-position:previous'
+  'ctrl-}': 'last-cursor-position:next'
+  'alt-ctrl-f': 'platformio-ide-terminal:focus'
+
+  # 'shift-ctrl-c': 'run:stop'
+# '.platform-darwin atom-workspace':
+  # 'cmd-R': 'script:run-with-profile'
+  # 'cmd-ctrl-R': 'script:run-options'
+
+'atom-text-editor':
+  'ctrl-alt-f': 'platformio-ide-terminal:focus'
+'.platform-darwin atom-text-editor':
+  'ctrl-r': 'run:file'
+  'ctrl-shift-r': 'run:selection'
+
+'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+  'alt-r': 'run:file'
+  'alt-shift-r': 'run:selection'
+
+'.platform-darwin .atom-runner':
+  'cmd-c': 'run:copy'
+
+'.atom-runner':
+  'escape': 'run:close'
+
+  # 'ctrl-alt-K': 'command-pallete:'
+# '.platform-darwin atom-text-editor':
+#   'cmd-R': 'script:run'
+#   'shift-cmd-k': 'script:run-with-profile'
+#   #'shift-enter': 'script:run'
+#   'ctrl-w': 'script:close-view'
+#   'ctrl-c': 'script:kill-process'
+#   'shift-cmd-j': 'script:run-by-line-number'
+#   'shift-cmd-i': 'script:run-options'
