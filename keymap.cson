@@ -37,8 +37,10 @@
 
 'atom-text-editor':
   'ctrl-alt-f': 'platformio-ide-terminal:focus'
+
 '.platform-darwin atom-text-editor':
   'ctrl-r': 'run:file'
+  'shift-ctrl-c': 'run:stop'
   'ctrl-shift-r': 'run:selection'
 
 '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':

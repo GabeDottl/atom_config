@@ -1,15 +1,40 @@
 "*":
+  "atom-beautify":
+    python:
+      beautify_on_save: true
+      indent_size: 2
+      max_line_length: 80
+      sort_imports: true
   "autocomplete-python":
     useSnippets: "required"
+  "clang-format": {}
   "command-palette":
     preserveLastSearch: true
   core:
+    closeEmptyWindows: false
+    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".scssc"
+      ".sass-cache"
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "Thumbs.db"
+      "node_modules"
+      "packages"
+      ".oh-my-zsh"
+      ".vim"
+      ".zsh"
+    ]
     packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
   "custom-title":
     template: "<%= filePath %><% if (projectPath) { %> - <%= projectPath %><% if (gitHead) { %> [<%= gitHead %>]<% } %><% } %>"
   "exception-reporting":
     userId: "b5d099bd-a544-4e7a-91e1-19bcdab54826"
+  "fuzzy-finder":
+    preserveLastSearch: true
   "incremental-search":
     instantSearch: true
   kite:
@@ -20,6 +45,8 @@
     style:
       animationSpeed: 10
       theme: "homebrew"
+  "python-autopep8":
+    formatOnSave: true
   runner:
     extensions:
       ps1: "powershell –file"
