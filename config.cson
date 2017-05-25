@@ -1,8 +1,7 @@
 "*":
   "atom-beautify":
     python:
-      beautify_on_save: true
-      indent_size: 2
+      indent_size: 4
       max_line_length: 80
       sort_imports: true
   "autocomplete-python":
