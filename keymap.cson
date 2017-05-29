@@ -37,18 +37,63 @@
 
 'atom-text-editor':
   'ctrl-alt-f': 'platformio-ide-terminal:focus'
+  # Start Line Jumper
+  'ctrl-up': 'line-jumper:move-up'
+  'ctrl-down': 'line-jumper:move-down'
+  'ctrl-shift-up': 'line-jumper:select-up'
+  'ctrl-shift-down': 'line-jumper:select-down'
+  # End Line Jumper
 
 '.platform-darwin atom-text-editor':
-  'ctrl-r': 'run:file'
-  'shift-ctrl-c': 'run:stop'
-  'ctrl-shift-r': 'run:selection'
+  'ctrl-r': 'script:run'
+  'ctrl-shift-c': 'run:terminate'
+  'ctrl-shift-r': 'script:run-with-profile'
+  'ctrl-w': 'script:close-view'
+  'ctrl-c': 'script:kill-process'
+  # 'shift-cmd-j': 'script:run-by-line-number'
+  # 'shift-cmd-i': 'script:run-options'
 
-'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
-  'alt-r': 'run:file'
-  'alt-shift-r': 'run:selection'
+# '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+#   'alt-r': 'run:script'
+#   'alt-shift-r': 'run:copy'
+# '.workspace':
+  # 'cmd-w': 'Kite: Close Sidebar'
 
-'.platform-darwin .atom-runner':
-  'cmd-c': 'run:copy'
+# '.platform-darwin .atom-runner':
+#   'cmd-c': 'run:copy'
 
-'.atom-runner':
-  'escape': 'run:close'
+'.atom-script':
+  'escape': 'run:exit'
+
+
+# '.platform-darwin atom-text-editor':
+
+
+# '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+#   'shift-ctrl-b': 'script:run'
+#   'shift-ctrl-alt-b': 'script:run-with-profile'
+#   #'shift-enter': 'script:run'
+#   #'ctrl-w': 'script:close-view'
+#   'ctrl-q': 'script:kill-process'
+#   'shift-ctrl-j': 'script:run-by-line-number'
+#   'shift-ctrl-alt-o': 'script:run-options'
+
+
+# '.platform-darwin atom-text-editor':
+#   'ctrl-x': 'run:script'
+
+# '.platform-darwin atom-workspace':
+#   'ctrl-c': 'run:terminate'
+#
+# '.platform-linux atom-text-editor':
+#   'alt-x': 'run:script'
+
+# '.platform-linux atom-workspace':
+#   'alt-c': 'run:terminate'
+
+# Copy from script runner pane:
+# '.platform-darwin .script-runner':
+#   'cmd-c': 'run:copy'
+#
+# '.platform-linux .script-runner':
+#   'ctrl-c': 'run:copy'

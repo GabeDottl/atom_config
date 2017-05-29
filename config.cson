@@ -1,7 +1,7 @@
 "*":
   "atom-beautify":
     python:
-      indent_size: 4
+      indent_size: 2
       max_line_length: 80
       sort_imports: true
   "autocomplete-python":
@@ -11,6 +11,9 @@
     preserveLastSearch: true
   core:
     closeEmptyWindows: false
+    disabledPackages: [
+      "language-python"
+    ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
       ".scssc"
@@ -30,6 +33,10 @@
     telemetryConsent: "no"
   "custom-title":
     template: "<%= filePath %><% if (projectPath) { %> - <%= projectPath %><% if (gitHead) { %> [<%= gitHead %>]<% } %><% } %>"
+  editor:
+    showIndentGuide: true
+    showInvisibles: true
+    tabType: "soft"
   "exception-reporting":
     userId: "b5d099bd-a544-4e7a-91e1-19bcdab54826"
   "fuzzy-finder":
@@ -38,6 +45,7 @@
     instantSearch: true
   kite:
     showKiteTourOnStatup: false
+    sidebarWidth: 300
   "platformio-ide-terminal":
     core:
       shell: "/bin/zsh"
@@ -46,7 +54,7 @@
       theme: "homebrew"
   "python-autopep8":
     formatOnSave: true
-  runner:
+  "script-runner":
     extensions:
       ps1: "powershell –file"
       "spec.coffee": "mocha"
