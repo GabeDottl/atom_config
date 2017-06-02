@@ -1,7 +1,7 @@
 "*":
   "atom-beautify":
     python:
-      indent_size: 2
+      indent_size: 4
       max_line_length: 80
       sort_imports: true
   "autocomplete-python":
@@ -29,7 +29,9 @@
       ".vim"
       ".zsh"
     ]
-    packagesWithKeymapsDisabled: []
+    packagesWithKeymapsDisabled: [
+      "symbol-gen"
+    ]
     telemetryConsent: "no"
   "custom-title":
     template: "<%= filePath %><% if (projectPath) { %> - <%= projectPath %><% if (gitHead) { %> [<%= gitHead %>]<% } %><% } %>"

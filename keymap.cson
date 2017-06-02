@@ -30,10 +30,14 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+'.platform-darwin atom-workspace':
+  'alt-shift-G': 'symbol-gen:generate'
 'atom-workspace':
   'ctrl-{': 'last-cursor-position:previous'
   'ctrl-}': 'last-cursor-position:next'
   'alt-ctrl-f': 'platformio-ide-terminal:focus'
+  # 'alt-up': 'multi-cursor-plus:move-up'
+  # 'alt-down': 'multi-cursor-plus:move-down'
 
 'atom-text-editor':
   'ctrl-alt-f': 'platformio-ide-terminal:focus'
@@ -42,6 +46,8 @@
   'ctrl-down': 'line-jumper:move-down'
   'ctrl-shift-up': 'line-jumper:select-up'
   'ctrl-shift-down': 'line-jumper:select-down'
+  'ctrl-left': 'window:focus-pane-on-left'
+  'ctrl-right': 'window:focus-pane-on-right'
   # End Line Jumper
 
 '.platform-darwin atom-text-editor':
@@ -65,8 +71,79 @@
 '.atom-script':
   'escape': 'run:exit'
 
+# OSX keymaps are different of atom's default
+# because ctrl-shift up and down are OS shortcuts for
+# mission control and application windows by default.
+'.platform-darwin atom-text-editor:not(mini)':
+
+  # Expand current cursor
+  'alt-down': 'multi-cursor:expandDown'
+  'alt-up':   'multi-cursor:expandUp'
+
+  # Move the last cursor.
+  'ctrl-alt-down':  'multi-cursor:move-last-cursor-down'
+  'ctrl-alt-right': 'multi-cursor:move-last-cursor-right'
+  'ctrl-alt-left':  'multi-cursor:move-last-cursor-left'
+  'ctrl-alt-up':    'multi-cursor:move-last-cursor-up'
+
+
+
+# Linux keybindings
+# '.platform-linux atom-text-editor:not(mini)':
+#
+#   # Expand current cursor
+#   'ctrl-shift-down': 'multi-cursor:expandDown'
+#   'ctrl-shift-up':   'multi-cursor:expandUp'
+#
+#   # Move the last cursor.
+#   'ctrl-shift-alt-down':  'multi-cursor:move-last-cursor-down'
+#   'ctrl-shift-alt-right': 'multi-cursor:move-last-cursor-right'
+#   'ctrl-shift-alt-left':  'multi-cursor:move-last-cursor-left'
+#   'ctrl-shift-alt-up':    'multi-cursor:move-last-cursor-up'
+#
+#
+#
+# # Windows keybindings
+# '.platform-win32 atom-text-editor:not(mini)':
+#
+#   # Expand current cursor
+#   'alt-down': 'multi-cursor:expandDown'
+#   'alt-up':   'multi-cursor:expandUp'
+#
+#   # Move the last cursor.
+#   'ctrl-shift-alt-down':  'multi-cursor:move-last-cursor-down'
+#   'ctrl-shift-alt-right': 'multi-cursor:move-last-cursor-right'
+#   'ctrl-shift-alt-left':  'multi-cursor:move-last-cursor-left'
+#   'ctrl-shift-alt-up':    'multi-cursor:move-last-cursor-up'
+
+
+#'atom-workspace':
+#  # Key bindings for multi-cursor
+#  'alt-x':                'multi-cursor-plus:mark'
+#  'alt-up':               'multi-cursor-plus:move-up'
+#  'alt-down':             'multi-cursor-plus:move-down'
+#  'alt-left':             'multi-cursor-plus:move-left'
+#  'alt-right':            'multi-cursor-plus:move-right'
+#  'ctrl-alt-left':        'multi-cursor-plus:move-to-beginning-of-word'
+#  'ctrl-alt-right':       'multi-cursor-plus:move-to-end-of-word'
+#  'alt-home':             'multi-cursor-plus:move-to-first-character-of-line'
+#  'alt-end':              'multi-cursor-plus:move-to-end-of-line'
+#  'ctrl-alt-home':        'multi-cursor-plus:move-to-top'
+#  'ctrl-alt-end':         'multi-cursor-plus:move-to-bottom'
+#  'alt-shift-up':         'multi-cursor-plus:select-up'
+#  'alt-shift-down':       'multi-cursor-plus:select-down'
+#  'alt-shift-left':       'multi-cursor-plus:select-left'
+#  'alt-shift-right':      'multi-cursor-plus:select-right'
+#  'ctrl-alt-shift-left':  'multi-cursor-plus:select-to-beginning-of-word'
+#  'ctrl-alt-shift-right': 'multi-cursor-plus:select-to-end-of-word'
+#  'alt-shift-home':       'multi-cursor-plus:select-to-first-character-of-line'
+#  'alt-shift-end':        'multi-cursor-plus:select-to-end-of-line'
+#  'ctrl-alt-shift-home':  'multi-cursor-plus:select-to-top'
+#  'ctrl-alt-shift-end':   'multi-cursor-plus:select-to-bottom'
 
 # '.platform-darwin atom-text-editor':
+
+
 
 
 # '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
