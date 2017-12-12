@@ -1,10 +1,12 @@
 "*":
   "atom-beautify":
     python:
-      indent_size: 4
+      formater: "yapf"
       max_line_length: 80
       sort_imports: true
   "autocomplete-python":
+    showTooltips: true
+    useKite: false
     useSnippets: "required"
   "clang-format": {}
   "command-palette":
@@ -12,6 +14,16 @@
   core:
     closeEmptyWindows: false
     disabledPackages: [
+      "python-debugger"
+      "linter-flake8"
+      "linter"
+      "linter-ui-default"
+      "python-indent"
+      "jupyter-notebook"
+      "kite"
+      "platformio-ide-terminal"
+      "script"
+      "python-autopep8"
       "language-python"
     ]
     excludeVcsIgnoredPaths: false
@@ -28,6 +40,8 @@
       ".oh-my-zsh"
       ".vim"
       ".zsh"
+      ".markdown"
+      ".tags"
     ]
     packagesWithKeymapsDisabled: [
       "symbol-gen"
@@ -36,8 +50,10 @@
   "custom-title":
     template: "<%= filePath %><% if (projectPath) { %> - <%= projectPath %><% if (gitHead) { %> [<%= gitHead %>]<% } %><% } %>"
   editor:
+    fontSize: 13
     showIndentGuide: true
     showInvisibles: true
+    tabLength: 2
     tabType: "soft"
   "exception-reporting":
     userId: "b5d099bd-a544-4e7a-91e1-19bcdab54826"
@@ -48,6 +64,10 @@
   kite:
     showKiteTourOnStatup: false
     sidebarWidth: 300
+  "linter-ui-default":
+    panelHeight: 69
+  "markdown-preview":
+    useGitHubStyle: true
   "platformio-ide-terminal":
     core:
       shell: "/bin/zsh"
@@ -56,6 +76,10 @@
       theme: "homebrew"
   "python-autopep8":
     formatOnSave: true
+  "python-import-magic":
+    pythonPaths: "/usr/local/bin/python3"
+  "python-tools":
+    smartBlockSelection: false
   "script-runner":
     extensions:
       ps1: "powershell –file"
@@ -68,5 +92,15 @@
       python: "python3"
       ruby: "ruby"
       shell: "bash"
+  "symbols-tree-view": {}
+  "tree-view":
+    autoReveal: true
   welcome:
     showOnStartup: false
+".python.regexp.source":
+  editor:
+    tabLength: 2
+".python.source":
+  editor:
+    autoIndent: true
+    tabLength: 2

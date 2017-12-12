@@ -30,6 +30,9 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+'atom-text-editor[data-grammar~="python"]:not([mini])':
+  'ctrl-alt-u': 'python-tools:show-usages'
+
 '.platform-darwin atom-workspace':
   'alt-shift-G': 'symbol-gen:generate'
 'atom-workspace':
@@ -51,7 +54,7 @@
   # End Line Jumper
 
 '.platform-darwin atom-text-editor':
-  'ctrl-r': 'script:run'
+  # 'ctrl-r': 'script:run'
   'ctrl-shift-c': 'run:terminate'
   'ctrl-shift-r': 'script:run-with-profile'
   'ctrl-w': 'script:close-view'
