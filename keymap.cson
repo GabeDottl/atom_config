@@ -49,9 +49,26 @@
   'ctrl-down': 'line-jumper:move-down'
   'ctrl-shift-up': 'line-jumper:select-up'
   'ctrl-shift-down': 'line-jumper:select-down'
+  # End Line Jumper
   'ctrl-left': 'window:focus-pane-on-left'
   'ctrl-right': 'window:focus-pane-on-right'
-  # End Line Jumper
+  'ctrl-shift-left': 'window:move-active-item-to-pane-on-left'
+  'ctrl-shift-right': 'window:move-active-item-to-pane-on-right'
+  'cmd-|': 'tree-view:toggle-focus'
+  # Pane movement
+  'alt-z': 'maximize-panes:maximize'
+  'alt-ctrl-right': 'move-panes:move-right'
+  'alt-ctrl-left': 'move-panes:move-left'
+  'alt-ctrl-up': 'move-panes:move-up'
+  'alt-ctrl-down': 'move-panes:move-down'
+  # 'shift-cmd-enter': 'maximize-panes:maximize'
+  # ###############################'ctrl-arrows works'########################
+  # 'ctrl-alt-cmd-shift-right': 'window:focus-pane-on-right'
+  # 'ctrl-alt-cmd-shift-left': 'window:focus-pane-on-left'
+  # 'ctrl-alt-cmd-shift-up': 'window:focus-pane-above'
+  # 'ctrl-alt-cmd-shift-down': 'window:focus-pane-below'
+
+  # End Pane movement
 
 '.platform-darwin atom-text-editor':
   # 'ctrl-r': 'script:run'

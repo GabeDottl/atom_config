@@ -1,12 +1,17 @@
 "*":
   "atom-beautify":
     python:
+      default_beautifier: "yapf"
       formater: "yapf"
+      formatter: "yapf"
       max_line_length: 80
       sort_imports: true
   "autocomplete-python":
     showTooltips: true
     useKite: false
+    useSnippets: "required"
+  "autocomplete-python-jedi":
+    outputProviderErrors: true
     useSnippets: "required"
   "clang-format": {}
   "command-palette":
@@ -18,13 +23,27 @@
       "linter-flake8"
       "linter"
       "linter-ui-default"
-      "python-indent"
       "jupyter-notebook"
-      "kite"
       "platformio-ide-terminal"
       "script"
-      "python-autopep8"
-      "language-python"
+      "git-plus"
+      "graphviz-preview-plus"
+      "kite"
+      "Hydrogen"
+      "atom-runner"
+      "editor-stats"
+      "git-time-machine"
+      "language-dot"
+      "MagicPython"
+      "atom-terminal-panel"
+      "autoclose-html"
+      "custom-title"
+      "file-watcher"
+      "incremental-search"
+      "symbols-view"
+      "symbols-list"
+      "autocomplete-python"
+      "autocomplete-python-jedi"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -50,7 +69,7 @@
   "custom-title":
     template: "<%= filePath %><% if (projectPath) { %> - <%= projectPath %><% if (gitHead) { %> [<%= gitHead %>]<% } %><% } %>"
   editor:
-    fontSize: 13
+    fontSize: 12
     showIndentGuide: true
     showInvisibles: true
     tabLength: 2
@@ -62,7 +81,7 @@
   "incremental-search":
     instantSearch: true
   kite:
-    showKiteTourOnStatup: false
+    showKiteTourOnStartup: false
     sidebarWidth: 300
   "linter-ui-default":
     panelHeight: 69
@@ -74,8 +93,7 @@
     style:
       animationSpeed: 10
       theme: "homebrew"
-  "python-autopep8":
-    formatOnSave: true
+  "python-autopep8": {}
   "python-import-magic":
     pythonPaths: "/usr/local/bin/python3"
   "python-tools":
@@ -94,7 +112,7 @@
       shell: "bash"
   "symbols-tree-view": {}
   "tree-view":
-    autoReveal: true
+    squashDirectoryNames: true
   welcome:
     showOnStartup: false
 ".python.regexp.source":
