@@ -20,9 +20,6 @@
     closeEmptyWindows: false
     disabledPackages: [
       "python-debugger"
-      "linter-flake8"
-      "linter"
-      "linter-ui-default"
       "jupyter-notebook"
       "platformio-ide-terminal"
       "script"
@@ -44,6 +41,7 @@
       "symbols-list"
       "autocomplete-python"
       "autocomplete-python-jedi"
+      "linter-flake8"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -83,10 +81,29 @@
   kite:
     showKiteTourOnStartup: false
     sidebarWidth: 300
+  "linter-python":
+    executablePath: "/usr/local/bin/pylama"
+    ignoreCodes: "E111,E501"
+    withPylint: true
   "linter-ui-default":
     panelHeight: 69
+    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
+  minimap:
+    plugins:
+      codeglance: true
+      codeglanceDecorationsZIndex: 0
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      "minimap-hide": true
+      "minimap-hideDecorationsZIndex": 0
+      "minimap-quick-highlight": true
+      "minimap-quick-highlightDecorationsZIndex": 0
   "platformio-ide-terminal":
     core:
       shell: "/bin/zsh"

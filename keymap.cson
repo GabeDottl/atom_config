@@ -54,7 +54,6 @@
   'ctrl-right': 'window:focus-pane-on-right'
   'ctrl-shift-left': 'window:move-active-item-to-pane-on-left'
   'ctrl-shift-right': 'window:move-active-item-to-pane-on-right'
-  'cmd-|': 'tree-view:toggle-focus'
   # Pane movement
   'alt-z': 'maximize-panes:maximize'
   'alt-ctrl-right': 'move-panes:move-right'
@@ -67,15 +66,27 @@
   # 'ctrl-alt-cmd-shift-left': 'window:focus-pane-on-left'
   # 'ctrl-alt-cmd-shift-up': 'window:focus-pane-above'
   # 'ctrl-alt-cmd-shift-down': 'window:focus-pane-below'
-
   # End Pane movement
 
+
+
 '.platform-darwin atom-text-editor':
+  'cmd-|': 'tree-view:toggle-focus'
+
   # 'ctrl-r': 'script:run'
   'ctrl-shift-c': 'run:terminate'
   'ctrl-shift-r': 'script:run-with-profile'
   'ctrl-w': 'script:close-view'
   'ctrl-c': 'script:kill-process'
+
+  # python-tools package
+  'cmd-shift-r': 'python-tools:show-usages'
+  # 'cmd-shift-g': 'python-tools:goto-definition'
+  # Autocomplete's impl works better than python-tools
+  'cmd-shift-g': 'autocomplete-python:go-to-definition'
+  'cmd-shift-e': 'python-tools:select-all-string'
+  # End python-tools
+
   # 'shift-cmd-j': 'script:run-by-line-number'
   # 'shift-cmd-i': 'script:run-options'
 
