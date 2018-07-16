@@ -35,12 +35,11 @@
 
 '.platform-darwin atom-workspace':
   'alt-shift-G': 'symbol-gen:generate'
+
 'atom-workspace':
   'ctrl-{': 'last-cursor-position:previous'
   'ctrl-}': 'last-cursor-position:next'
   'alt-ctrl-f': 'platformio-ide-terminal:focus'
-  # 'alt-up': 'multi-cursor-plus:move-up'
-  # 'alt-down': 'multi-cursor-plus:move-down'
 
 'atom-text-editor':
   'ctrl-alt-f': 'platformio-ide-terminal:focus'
@@ -54,26 +53,17 @@
   'ctrl-right': 'window:focus-pane-on-right'
   'ctrl-shift-left': 'window:move-active-item-to-pane-on-left'
   'ctrl-shift-right': 'window:move-active-item-to-pane-on-right'
-  # Pane movement
+  # Pane management
   'alt-z': 'maximize-panes:maximize'
   'alt-ctrl-right': 'move-panes:move-right'
   'alt-ctrl-left': 'move-panes:move-left'
   'alt-ctrl-up': 'move-panes:move-up'
   'alt-ctrl-down': 'move-panes:move-down'
-  # 'shift-cmd-enter': 'maximize-panes:maximize'
-  # ###############################'ctrl-arrows works'########################
-  # 'ctrl-alt-cmd-shift-right': 'window:focus-pane-on-right'
-  # 'ctrl-alt-cmd-shift-left': 'window:focus-pane-on-left'
-  # 'ctrl-alt-cmd-shift-up': 'window:focus-pane-above'
-  # 'ctrl-alt-cmd-shift-down': 'window:focus-pane-below'
-  # End Pane movement
-
-
+  # End Pane management
 
 '.platform-darwin atom-text-editor':
   'cmd-|': 'tree-view:toggle-focus'
 
-  # 'ctrl-r': 'script:run'
   'ctrl-shift-c': 'run:terminate'
   'ctrl-shift-r': 'script:run-with-profile'
   'ctrl-w': 'script:close-view'
@@ -89,15 +79,6 @@
 
   # 'shift-cmd-j': 'script:run-by-line-number'
   # 'shift-cmd-i': 'script:run-options'
-
-# '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
-#   'alt-r': 'run:script'
-#   'alt-shift-r': 'run:copy'
-# '.workspace':
-  # 'cmd-w': 'Kite: Close Sidebar'
-
-# '.platform-darwin .atom-runner':
-#   'cmd-c': 'run:copy'
 
 '.atom-script':
   'escape': 'run:exit'
@@ -117,6 +98,15 @@
   'ctrl-alt-left':  'multi-cursor:move-last-cursor-left'
   'ctrl-alt-up':    'multi-cursor:move-last-cursor-up'
 
+
+# '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+#   'alt-r': 'run:script'
+#   'alt-shift-r': 'run:copy'
+# '.workspace':
+  # 'cmd-w': 'Kite: Close Sidebar'
+
+# '.platform-darwin .atom-runner':
+#   'cmd-c': 'run:copy'
 
 
 # Linux keybindings
