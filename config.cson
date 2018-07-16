@@ -83,8 +83,8 @@
     sidebarWidth: 300
   "linter-python":
     executablePath: "/usr/local/bin/pylama"
-    ignoreCodes: "E111,E501"
-    withPylint: true
+    ignoreCodes: "E111,E501,E114"
+    withPep8: true
   "linter-ui-default":
     panelHeight: 69
     showPanel: true
